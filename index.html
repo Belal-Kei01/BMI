@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./pics/bmi.png">
+    <title>BMI</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="headerLogo">
+            <img class="logoImg" src="./pics/myLogoNew.png" alt="kei01">
+        </div>
+        <h2 class="keiCount">کَی حساب</h2>
+    </header>
+
+    <div class="allContainer">
+
+        <h2 class="textHeader">
+            ____ محاسبه توده بدنی (BMI) ____
+        </h2>
+
+        <div class="heightContainer">
+            <input type="number" name="height" id="heightGetter" placeholder="مثال: 170" min="100" max="250"
+                minlength="3" maxlength="3">
+            <p class="interHeight">(سانتی متر) قد</p>
+        </div>
+
+        <div class="weightContainer">
+            <input type="number" name="weight" id="weightGetter" placeholder="مثال: 65" min="20" max="150" minlength="2"
+                maxlength="3">
+            <p class="interweight">(کیلوگرم) وزن</p>
+        </div>
+
+        <div class="calculateButton">
+            <button class="calculateBTN" type="button">محاسبه</button>
+        </div>
+
+    </div>
+
+    <!-- ********************************************************************************************* -->
+    <div class="showResult">
+        <div class="removeBox">
+            <img src="./pics/multiply.png" alt="multiply">
+        </div>
+        <header>
+            <div class="yourHeightWeight ">
+                <h3 class="yourHeight"></h3>
+            </div>
+            <div class="yourHeightWeight ">
+                <h3 class="yourWeight"></h3>
+            </div>
+        </header>
+
+        <div class="resultCircle">
+            <h1 class="bmiText">BMI</h1>
+            <h2 class="textPersion">شاخص توده بدنی</h2>
+            <h3 class="resultNum"></h3>
+        </div>
+
+        <div class="situation">
+            <p class="pElem">وضعیت: <span class="situationSpan"></span></p>
+            <p class="pElem">میزان اضافه وزن: <span class="highWeightRate"></span></p>
+            <p class="pElem">محدوده وزن سالم: <span class="normaleWeightRange"> 57.5 تا 60 کیلوگرم </span></p>
+        </div>
+    </div>
+
+
+    <script src="BMI.js"></script>
+
+</body>
+
+</html>
